@@ -10,6 +10,8 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
 
+import connection.LoginConnection;
+
 public class Login {
 	private JFrame loginFrame = new JFrame("Login");
 	private JTextField userNameFld = new JTextField(15);
@@ -42,7 +44,9 @@ public class Login {
 
 			@Override
 			public void actionPerformed(ActionEvent e) {
-
+				LoginConnection cn = new LoginConnection();
+				cn.tryLogin(userNameFld.getText(), userPassFld.getText());
+				loginFrame.dispose();
 			}
 		});
 		regBut.addActionListener(new ActionListener() {

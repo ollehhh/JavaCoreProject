@@ -76,4 +76,12 @@ public class User {
 		this.specialization = specialization;
 	}
 
+	@Override
+	public String toString() {
+		return "User [id=" + id + ", phone=" + phone + ", login=" + login + ", firstName=" + firstName + ", surName="
+				+ surName + ", password=" + password + ", email=" + email + ", companyName=" + companyName
+				+ ", specialization=" + specialization + "]";
+	}
+	
+
 }
