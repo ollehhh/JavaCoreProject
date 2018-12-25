@@ -8,6 +8,7 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
+import javax.swing.JPasswordField;
 import javax.swing.JTextField;
 
 import connection.LoginConnection;
@@ -15,7 +16,7 @@ import connection.LoginConnection;
 public class Login {
 	private JFrame loginFrame = new JFrame("Login");
 	private JTextField userNameFld = new JTextField(15);
-	private JTextField userPassFld = new JTextField(15);
+	private JTextField userPassFld = new JPasswordField(15);
 	private JButton loginBut = new JButton("Login");
 	private JButton regBut = new JButton("Register");
 

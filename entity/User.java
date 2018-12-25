@@ -1,7 +1,7 @@
 package entity;
 
 public class User {
-	private int id, phone;
+	private int id, phone, manager_id;
 	private String login, firstName, surName, password, email, companyName, specialization;
 
 	public int getId() {
@@ -76,12 +76,19 @@ public class User {
 		this.specialization = specialization;
 	}
 
+	public int getManager_id() {
+		return manager_id;
+	}
+
+	public void setManager_id(int manager_id) {
+		this.manager_id = manager_id;
+	}
+
 	@Override
 	public String toString() {
-		return "User [id=" + id + ", phone=" + phone + ", login=" + login + ", firstName=" + firstName + ", surName="
-				+ surName + ", password=" + password + ", email=" + email + ", companyName=" + companyName
-				+ ", specialization=" + specialization + "]";
+		return "User [id=" + id + ", phone=" + phone + ", manager_id=" + manager_id + ", login=" + login
+				+ ", firstName=" + firstName + ", surName=" + surName + ", password=" + password + ", email=" + email
+				+ ", companyName=" + companyName + ", specialization=" + specialization + "]";
 	}
-	
 
 }

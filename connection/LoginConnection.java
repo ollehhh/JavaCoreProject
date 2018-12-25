@@ -40,12 +40,10 @@ public class LoginConnection {
 				user.setSurName(rs.getString("SURNAME"));
 				user.setPhone(rs.getInt("PHONE"));
 				user.setSpecialization(rs.getString("SPECIALIZATION"));
-				System.out.println(user);
+				user.setManager_id(rs.getInt("MANAGER_ID"));
 				userList.add(user);
 			}
 			rs.close();
-			stmt.close();
-			conn.close();
 		} catch (SQLException se) {
 			se.printStackTrace();
 		} catch (Exception e) {

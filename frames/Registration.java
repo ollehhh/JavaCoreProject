@@ -8,6 +8,7 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
+import javax.swing.JPasswordField;
 import javax.swing.JTextField;
 
 import connection.RegisterConnection;
@@ -16,7 +17,7 @@ import entity.User;
 public class Registration {
 	private JFrame registerFrame = new JFrame("Registration");
 	private JTextField loginNameField = new JTextField();
-	private JTextField passwordField = new JTextField();
+	private JTextField passwordField = new JPasswordField();
 	private JTextField firstNameField = new JTextField();
 	private JTextField surnameField = new JTextField();
 	private JTextField emailField = new JTextField();
