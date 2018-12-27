@@ -55,4 +55,11 @@ public class Task {
 		this.endDate = endDate;
 	}
 
+	@Override
+	public String toString() {
+		return "Task [id=" + id + ", companyId=" + companyId + ", taskName=" + taskName + ", status=" + status
+				+ ", startDate=" + startDate + ", endDate=" + endDate + "]";
+	}
+	
+
 }

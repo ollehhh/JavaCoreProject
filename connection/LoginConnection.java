@@ -14,7 +14,7 @@ public class LoginConnection {
 
 	static final String USER = "ollehhh";
 	static final String PASS = "lhgfei111";
-	User user = new User();
+	User user ;
 	List<User> userList = new ArrayList<User>();
 
 	public void tryLogin(String login, String pass) {
@@ -31,6 +31,7 @@ public class LoginConnection {
 			ResultSet rs = stmt.executeQuery(sql);
 
 			while (rs.next()) {
+				user = new User();
 				user.setId(rs.getInt("ID"));
 				user.setLogin(rs.getString("LOGIN"));
 				user.setPassword(rs.getString("PASS"));
